@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>DANA</title>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <div class="logo">DANA</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"><i class="fa fa-bars"></i></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="klockor.html">Kolckor</a></li>
+                <li><a href="smycken.html">Smycken</a></li>
+                <li><a href="omoss.html">om oss</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1>Kontakt</h1>
+
+    <!--kontakt information-->
+    <div class="kontaktInfo">
+        <div class="info">
+            <h4>Adress</h4>
+            <p>Vallstanäs 136</p>
+            <p>Rosersberg 195 95</p>
+        </div>
+        <div class="info">
+            <h4>Mobil</h4>
+            <p>0730781003</p>
+        </div>
+    </div>
+
+    <!--form-->
+    <form class="input">
+        <h3>Skriv till oss</h3>
+        <label  for="fname2">Namn</label>
+         <input  type="text" id="fname2" name=fname placeholder="Ditt namn" >
+         <label  for="email2">E-post</label>
+         <input   type="email" id="email2" name=email placeholder="Ditt E-post" >
+         <label>Meddelande</label><br>
+         <textarea class="area" placeholder="Skriv till oss..." ></textarea>
+         <button class="kopbtn" id="myBtn" type="button">Skicka</button>
+         <div id="myModal" class="modal">
+             <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Tack för ditt meddelande</p>
+             </div>
+         </div>
+        </form>
+
+     <!--karta-->
+    <div class="karta">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2036.3217648321845!2d18.03204138392845!3d59.31088388165242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77fdc8c7b655%3A0x1bd3b6dfec9b163c!2sIT-H%C3%B6gskolan%20Stockholm!5e0!3m2!1sar!2sse!4v1633258966736!5m2!1sar!2sse"
+        width="600" height="400" allowfullscreen="" loading="lazy">
+         </iframe>
+    </div>
+     <!--footer-->
+        <footer>
+            <p >© Dana Alhawari 2021</p>
+        </footer>
+    <script src="script.js"></script>
+    <script src="script-k.js"></script> 
+</body>
+</html>

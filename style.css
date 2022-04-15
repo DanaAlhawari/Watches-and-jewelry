@@ -1,0 +1,420 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+/*=============================== index style ===============================*/
+
+/*============== navbar =================*/
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
+  box-shadow: 0 4px 8px 0 #B7A780, 0 6px 20px 0 #B7A780;
+
+}
+.logo{
+  font-size: 17px;
+  margin: .5rem;
+  color: #B7A780;
+  font-weight: bold;
+}
+.navbar-links ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navbar-links li {
+  list-style: none;
+}
+.navbar ul li a{
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+  color: #584920;
+  font-size: 17px;
+ 
+}
+.navbar-links li:hover{
+  background-color: #B7A780;
+  border-radius: 2px;
+}
+.toggle-button{
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  width: 30px;
+  height: 21px;
+  color: #584920;
+}
+
+/*============ navbar media ===============*/
+
+@media(max-width :768px){
+  .toggle-button{
+      display: flex;
+  }
+  .navbar-links{
+      display: none;
+  }
+  .navbar{
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .navbar-links ul{
+      flex-direction: column;
+      width: 100%;
+     
+  }
+  .navbar-links li a{
+      padding: .5rem 1rem;
+  }
+  .navbar-links.active{
+      display: flex;
+  }
+}
+
+  /*===========slidshow============*/
+
+  .slideshow{
+      width: 80%;
+      margin: auto;
+      position: relative;
+      margin-bottom: 47px;
+    
+  }
+  .mySlides {
+      display: none;
+  }
+  .mySlides img{
+      width: 100%;
+      height: 400px;
+  }
+
+  /*========== maintext ==========*/
+  .maintext{
+      width: 80%;
+      height: auto;
+      margin: auto;
+      margin-bottom: 47px;
+
+  }
+  .maintext h1,h2{
+      text-align: center;
+      font-size: 40px;
+      color: #B7A780;
+  }
+  .maintext p{
+      text-align: left;
+      font-size: 17px;
+      color: #584920;
+      padding: 12px 16px;
+  }
+
+  /*========= maintext-float ==========*/
+  .maintext1{
+      width: 80%;
+      height: 300px;
+      margin: auto;
+      margin-bottom: 47px;
+  }
+   .text {
+      width: 50%;
+      float: left;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .text p{
+    padding: 12px 16px;
+    color:#584920 ;
+    font-size: 17px;
+    line-height: 35px;
+    margin-bottom: 50px;
+    
+  }
+   .bild{
+      width: 50%;
+      float: right;
+  }
+  .bild2 img{
+      width: 100%;
+      height: 300px;
+
+  }
+  .kopbtn{
+      background-color: #B7A780;
+      border: none;
+      border-radius: 2px;
+      text-decoration: none;
+      text-align: center;
+      font-size: 17px;
+      color: #584920;
+      padding: 3px 29px;
+     
+  }
+  .kopbtn:hover{
+    border: 1px solid #584920;
+  }
+ 
+/*======== second maintext ==========*/
+.text2 {
+    width: 50%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text2 p{
+  padding: 12px 16px;
+  color:#584920 ;
+  font-size: 17px;
+  line-height: 35px;
+  margin-bottom: 50px;
+  
+}
+ .bild2{
+    width: 50%;
+    float: left;
+
+}
+.bild2 img{
+    width: 100%;
+    height: 300px;
+}
+
+/*========= index media  =========*/
+
+@media screen and (max-width: 992px){
+    .text p , .text2 p{
+        line-height: 20px;
+    }
+}
+@media screen and (max-width: 768px){
+    .text p , .text2 p{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 575px){
+    .text , .text2,  .bild2  , .bild{
+        float: none;
+        width: 100%;
+        margin-bottom: 47px;
+    }
+   .maintext1{
+      height: auto;   
+   }  
+}
+
+/*====== footer =======*/
+
+footer {
+  height: 47px;
+}
+footer p{
+    text-align: center;
+    color: #B7A780;  
+}
+
+
+/*============================= klockor style ==========================*/
+h1{
+  text-align: center;
+  color: #B7A780;
+  margin-bottom: 47px;
+
+}
+
+div.card {
+    border: 1px solid #B7A780;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+  
+  div.card:hover {
+    border: 1px solid #584920;
+  }
+  
+  div.card img {
+    width: 100%;
+   
+  }
+  
+  div.cardText{
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .container{
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    margin-bottom: 47px;
+  }
+  
+  /*====== klockor media ======*/
+
+  @media only screen and (max-width: 992px) {
+    .container {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+ 
+  } 
+  @media only screen and (max-width: 575px) {
+    .container {
+      width: 100%;
+     
+    }
+  } 
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+ /*=========================== om oss  style ====================*/
+ .about{
+     width: 80%;
+     margin: auto;
+     margin-bottom: 47px;
+ }
+ .about img{
+    width: 100%; 
+    height: 400px;  
+ }
+
+
+ /*========================== kontakt style ========================*/
+ .kontaktInfo{
+     width: 100%;
+     display: flex;
+     margin-bottom: 47px;
+     text-align: center;
+ }
+ .info{
+     width: 50%;
+     font-size: 30px;
+ }
+ .info h4{
+     color: #B7A780;
+ }
+ .info p{
+     color: #584920;
+ }
+
+ /*=========kontakt information media========*/
+ @media(max-width:600px){
+   .kontaktInfo{
+     flex-direction: column;
+   }
+   .info{
+     width: 100%;
+   }
+ }
+
+ /*========= form ========*/
+ .input{
+  width:80%;
+  height: auto;
+  margin: auto ;
+  margin-bottom: 47px;
+  border-radius: 2px;
+  background-color: #B7A780;
+  padding: 20px;   
+  
+}
+label,h3{
+  color: #584920;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #B7A780;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=email]{
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #B7A780;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.area{
+    height: 200px;
+}
+.input .kopbtn{
+  border:1px solid #584920;
+}
+ .input .kopbtn:hover{
+  background-color: #584920;
+  color: #B7A780;
+ }
+
+ /*==== karta ====*/
+ .karta{
+     width: 100%;
+     height: 400px;
+     margin-bottom: 47px;
+ }
+ .karta iframe{
+     width: 100%;
+     border: 1px solid #B7A780;
+ }
+
+ /*====== box model ======*/
+
+ .modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+ 
+}
+.modal-content {
+  background-color: #ffffff;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #B7A780;
+  width: 50%;
+}
+.modal-content p{
+  color: #584920;
+  text-align: center;
+  font-size: 20px;
+}
+.close {
+  color: #B7A780;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #584920;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
